@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-
+const NotFoundComponent = { template: '<h1>Page not found</h1><br><h2>404找不到您要的页面，是</h2>' }
 const routes = [
   {
     path: '/',
@@ -18,7 +18,7 @@ const routes = [
   {
     path:'/404',
     name:'404',
-    component: ()=> import('../components/HelloWorld.vue'),
+    component: NotFoundComponent,
   }
 ]
 
